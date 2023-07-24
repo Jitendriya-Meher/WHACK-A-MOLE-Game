@@ -1,0 +1,125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+body{
+    background-color: #769c38;
+    height: 100vh;
+}
+
+.count{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -60px;
+    padding: 24px;
+}
+
+.item{
+    width: 200px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mole{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    background-color: #d5d6db;
+    border-radius: 50%;
+    transition: all 300ms ease;
+}
+
+.mole img{
+    padding: 7px;
+}
+
+.mole-hide{
+    bottom: 10px;
+    width: 50px;
+}
+
+.mole-appear{
+    width: 170px;
+    bottom: 50px;
+}
+
+.bush{
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.whack-text{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 26px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container.active{
+    display: none;
+}
+
+.start{
+    width: 150px;
+    height: 60px;
+    font-size: 28px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.start:active{
+    transform: scale(0.9);
+}
+
+.start.active{
+    display: none;
+}
+
+.me{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: #fff;
+    font-size: 18px;
+    pointer-events: none;
+}
